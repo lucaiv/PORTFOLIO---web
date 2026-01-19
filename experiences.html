@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expériences Détaillées | Luca Inman Villanueva</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* Styles spécifiques à cette page pour gagner du temps */
+        .exp-detail-section { padding: 100px 10%; border-bottom: var(--border); }
+        .tech-sheet { 
+            display: grid; grid-template-columns: 1fr 1fr; gap: 50px; 
+            background: var(--bg-card); padding: 40px; border-radius: 20px; border: var(--border);
+        }
+        .config-tag { 
+            display: inline-block; padding: 5px 15px; border-radius: 5px; 
+            font-size: 0.7rem; font-weight: 800; text-transform: uppercase; margin-bottom: 15px;
+        }
+        .tag-ronin { background: #4ecdc4; color: #000; }
+        .tag-vmount { background: var(--primary); color: #fff; }
+        .back-home { position: fixed; bottom: 30px; left: 30px; z-index: 100; }
+    </style>
+
+<header>
+    <nav>
+        <div class="logo">LUCA<span>IV</span></div>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="experiences.html">Expériences</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+</head>
+<body class="bg-dark">
+
+
+    <section class="container" style="padding-bottom: 50px;">
+        <div class="section-header">
+            <p class="hero-tagline">Dossier Technique</p>
+            <h1>Parcours & Missions</h1>
+            <p class="hero-sub">Détails des interventions, configurations matérielles et flux de production.</p>
+        </div>
+    </section>
+
+    <section id="arena-tour" class="exp-detail-section">
+        <div class="tech-sheet">
+            <div class="info-column">
+                <span class="config-tag tag-vmount">Setup Production Lourde</span>
+                <h2 style="color: var(--primary); font-size: 2.5rem; margin-bottom: 20px;">ARENA TOUR</h2>
+                <h3>Indochine / IAM (via Alabama Media)</h3>
+                <p style="margin: 20px 0; color: var(--text-dim);">Intervention sur des configurations de tournées massives. Ma mission principale consistait en la gestion des flux vidéo vers les murs LED géants.</p>
+                <ul class="check-list">
+                    <li>Assemblage et paramétrage de dalles LED haute résolution</li>
+                    <li>Gestion des processeurs (Novastar / Brompton)</li>
+                    <li>Monitoring des signaux en régie touring</li>
+                </ul>
+            </div>
+            <div class="media-column">
+                <div style="width:100%; height:300px; background: #222; border-radius:15px; display:flex; align-items:center; justify-content:center; border: var(--border);">
+                    <p style="color:var(--text-dim)">[PHOTO ARENA / MURS LED]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="france-tv" class="exp-detail-section bg-light">
+        <div class="tech-sheet">
+            <div class="info-column">
+                <span class="config-tag" style="background: #fff; color: #000;">Infrastructure IP / 2110</span>
+                <h2 style="color: var(--primary); font-size: 2.5rem; margin-bottom: 20px;">FRANCE TÉLÉVISIONS</h2>
+                <h3>Exploitation & Vision</h3>
+                <p style="margin: 20px 0; color: var(--text-dim);">Travail en environnement critique (antenne direct). Maintenance et exploitation des serveurs de diffusion et des switchs réseaux.</p>
+                <div class="skills-tags" style="grid-template-columns: 1fr 1fr;">
+                    <div class="tag-item" style="margin-bottom:10px;">V-Mix / Tricaster</div>
+                    <div class="tag-item" style="margin-bottom:10px;">Contrôle Vision</div>
+                </div>
+            </div>
+            <div class="media-column">
+                <div style="width:100%; height:300px; background: #222; border-radius:15px; display:flex; align-items:center; justify-content:center; border: var(--border);">
+                    <p style="color:var(--text-dim)">[PHOTO RÉGIE FRANCE 3]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nma" class="exp-detail-section">
+        <div class="tech-sheet">
+            <div class="info-column">
+                <span class="config-tag tag-ronin">Setup Agile / Ronin</span>
+                <h2 style="color: var(--primary); font-size: 2.5rem; margin-bottom: 20px;">NRJ MUSIC AWARDS</h2>
+                <h3>Toulouse (Videlio Events)</h3>
+                <p style="margin: 20px 0; color: var(--text-dim);">Support technique sur le terrain pour la captation de l'événement. Utilisation de configurations légères pour les plans d'ambiance et aftermovies.</p>
+                <ul class="check-list">
+                    <li>Opérateur tourelles (PTZ)</li>
+                    <li>Câblage fibre optique et SDI</li>
+                    <li>Déploiement régie mobile</li>
+                </ul>
+            </div>
+            <div class="media-column">
+                <div style="width:100%; height:300px; background: #222; border-radius:15px; display:flex; align-items:center; justify-content:center; border: var(--border);">
+                    <p style="color:var(--text-dim)">[PHOTO COULISSES NMA]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="margin-top:0;">
+        <div class="footer-content">
+            <p>© 2026 — Luca Inman Villanueva | Dossier Technique</p>
+        </div>
+    </footer>
+
+</body>
+</html>

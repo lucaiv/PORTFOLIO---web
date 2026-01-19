@@ -1,0 +1,495 @@
+/* --- 1. CONFIGURATION GÉNÉRALE & VARIABLES --- */
+:root {
+    --primary: #ff3e3e;
+    --primary-hover: #e63535;
+    --bg-dark: #0b0b0b;
+    --bg-card: #161616;
+    --bg-light: #121212;
+    --text-main: #ffffff;
+    --text-dim: #a0a0a0;
+    --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    --border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+/* --- 2. LAYOUT & SECTIONS --- */
+.container {
+    padding: 100px 10%;
+}
+
+.container-small {
+    padding: 50px 10%;
+}
+
+.bg-light { background-color: var(--bg-light); }
+.bg-dark { background-color: #050505; }
+
+.section-header {
+    margin-bottom: 50px;
+}
+
+.section-header h2 {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.section-header .line {
+    width: 60px;
+    height: 4px;
+    background: var(--primary);
+    margin-top: 15px;
+}
+
+/* --- 3. NAVIGATION --- */
+header {
+    position: fixed;
+    width: 100%;
+    padding: 25px 10%;
+    background: rgba(11, 11, 11, 0.95);
+    backdrop-filter: blur(15px);
+    z-index: 1000;
+    border-bottom: var(--border);
+    transition: var(--transition);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.6rem;
+    letter-spacing: 3px;
+}
+
+.logo span { color: var(--primary); }
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li { margin-left: 35px; }
+
+nav ul li a {
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: var(--transition);
+}
+
+nav ul li a:hover { color: var(--primary); }
+
+/* --- 4. HERO SECTION (LUCA01.PNG) --- */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.85)), url('IMG/luca01.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero h1 {
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    margin-bottom: 15px;
+    line-height: 1;
+}
+
+.hero-tagline {
+    font-size: 1.4rem;
+    color: var(--primary);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero-sub {
+    font-size: 1rem;
+    color: var(--text-dim);
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 18px 45px;
+    border: 2px solid var(--primary);
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background: var(--primary);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 62, 62, 0.3);
+}
+
+/* --- 5. BIO & ENGAGEMENT --- */
+.bio-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.bio-text p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: var(--text-dim);
+}
+
+.engagement-highlight {
+    background: #1a1a1a;
+    padding: 40px;
+    border-radius: 4px;
+    border-left: 5px solid var(--primary);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+.engagement-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.engagement-header .icon { font-size: 1.8rem; }
+.engagement-header h3 { font-size: 1.3rem; text-transform: uppercase; }
+
+.engagement-item {
+    margin-bottom: 20px;
+}
+
+.engagement-item strong {
+    display: block;
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+.engagement-item p {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* --- 6. PARTNERS STRIP --- */
+.partners-strip {
+    background: #080808;
+    padding: 80px 0;
+    border-top: var(--border);
+    border-bottom: var(--border);
+}
+
+.logos-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    filter: grayscale(100%);
+    opacity: 0.4;
+    transition: var(--transition);
+}
+
+.logos-wrapper:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+.logos-wrapper img {
+    height: 80px;
+    width: auto;
+}
+
+.partners-title {
+    text-align: center;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--primary); /* En rouge pour attirer l'oeil */
+    margin-bottom: 50px;
+    font-weight: 700;
+    opacity: 0.9;
+}
+
+/* On s'assure que le strip a assez de place avec le titre en plus */
+.partners-strip {
+    padding: 100px 0; 
+    background: #080808;
+    border-top: var(--border);
+    border-bottom: var(--border);
+}
+
+/* --- 7. EXPERTISE (CARRÉS) --- */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: var(--bg-card);
+    padding: 45px;
+    border-radius: 8px;
+    border: var(--border);
+    transition: var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary);
+    background: #1f1f1f;
+}
+
+.card-icon { font-size: 2rem; margin-bottom: 20px; }
+.card h3 { margin-bottom: 20px; color: var(--primary); text-transform: uppercase; font-size: 1.1rem; }
+.card ul { list-style: none; }
+.card ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    font-size: 0.9rem;
+    color: var(--text-dim);
+}
+
+/* --- 8. MARCIAC HIGHLIGHT --- */
+.marciac-highlight {
+    background: linear-gradient(45deg, #161616, #0b0b0b);
+    border: 1px solid var(--primary);
+    border-radius: 20px;
+    margin: 0 10% 80px 10%;
+    padding: 60px;
+    text-align: center;
+}
+
+.milestones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.milestone {
+    background: #222;
+    padding: 20px 30px;
+    border-radius: 10px;
+    border-bottom: 4px solid var(--primary);
+    flex: 1;
+    min-width: 200px;
+}
+
+.m-date { display: block; font-weight: 700; color: var(--primary); margin-bottom: 5px; }
+.m-text { font-size: 0.9rem; font-weight: 700; }
+
+/* --- 9. TIMELINE EXPERIENCES --- */
+.timeline {
+    border-left: 2px solid #333;
+    padding-left: 40px;
+    max-width: 800px;
+}
+
+.exp-item {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.exp-item::before {
+    content: '';
+    position: absolute;
+    left: -47px;
+    top: 5px;
+    width: 14px;
+    height: 14px;
+    background: var(--primary);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--primary);
+}
+
+.exp-item .date {
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* --- 10. SETUPS (2 CARTES) --- */
+.setup-wrapper {
+    display: flex;
+    gap: 40px;
+}
+
+.setup-card {
+    flex: 1;
+    background: var(--bg-card);
+    padding: 50px;
+    border-radius: 15px;
+    border: var(--border);
+    transition: var(--transition);
+}
+
+.setup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.setup-icon { font-size: 2.5rem; }
+
+.tag {
+    background: var(--primary);
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.setup-card.featured {
+    border: 2px solid var(--primary);
+    background: rgba(255, 62, 62, 0.03);
+}
+
+.setup-card ul { margin-top: 20px; list-style: square; padding-left: 20px; color: var(--text-dim); }
+
+/* --- 11. PORTFOLIO --- */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+}
+
+.work-sample {
+    position: relative;
+    height: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    border: var(--border);
+}
+
+.overlay {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgba(255, 62, 62, 0.95));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 40px;
+    transition: var(--transition);
+}
+
+.work-sample:hover .overlay {
+    bottom: 0;
+}
+
+.overlay h3 { font-size: 1.5rem; margin-bottom: 5px; }
+.overlay p { font-weight: 700; text-transform: uppercase; font-size: 0.8rem; }
+
+/* --- 12. FOOTER --- */
+footer {
+    padding: 80px 10%;
+    background: #050505;
+    text-align: center;
+    border-top: var(--border);
+}
+
+.footer-content p { margin-bottom: 10px; }
+.copyright { color: #555; font-size: 0.8rem; margin-top: 20px; }
+
+/* --- 13. RESPONSIVE --- */
+@media (max-width: 1024px) {
+    .bio-grid, .setup-wrapper { grid-template-columns: 1fr; flex-direction: column; }
+    .container { padding: 80px 5%; }
+}
+
+@media (max-width: 768px) {
+    nav ul { display: none; }
+    .hero h1 { font-size: 3rem; }
+    .partners-strip { padding: 40px 0; }
+    .logos-wrapper { gap: 30px; }
+}
+
+/* --- LANGUES --- */
+.lang-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.lang-card {
+    background: var(--bg-card);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 200px;
+    border: var(--border);
+    transition: var(--transition);
+}
+.lang-card:hover { transform: translateY(-5px); border-color: var(--primary); }
+.flag { width: 50px; height: auto; margin-bottom: 15px; border-radius: 4px; }
+
+/* --- CONTACT --- */
+.contact-wrapper {
+    background: #1a1a1a;
+    padding: 50px;
+    border-radius: 15px;
+    text-align: center;
+}
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+.contact-item {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    transition: var(--transition);
+}
+.contact-item:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: white;
+}

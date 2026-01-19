@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Luca Inman Villanueva</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* --- STYLE DES CHAPITRES (ANNÉES) --- */
+        .year-divider { grid-column: 1 / -1; display: flex; align-items: center; margin: 40px 0 20px 0; }
+        .year-divider span { background: var(--primary, #e63946); color: white; padding: 5px 20px; border-radius: 50px; font-weight: 900; font-size: 1.2rem; z-index: 1; }
+        .year-divider::after { content: ""; flex: 1; height: 1px; background: rgba(255, 255, 255, 0.1); margin-left: -20px; }
+
+        /* --- GRILLE & VIDÉOS --- */
+        .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); gap: 30px; margin-bottom: 50px; }
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; background: #000; border: 1px solid rgba(255, 255, 255, 0.1); }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+        .video-info { padding: 15px 0 30px 0; }
+        .video-info h3 { margin: 10px 0 5px 0; color: #fff; font-size: 1.1rem; }
+        .video-info p { color: #aaa; font-size: 0.85rem; }
+
+        .config-tag { padding: 3px 10px; font-size: 0.65rem; font-weight: 800; border-radius: 4px; text-transform: uppercase; display: inline-block; }
+        
+        @media (max-width: 768px) { .portfolio-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body class="bg-dark">
+
+    <section class="container" id="participations">
+        <div class="section-header" style="margin-top: 80px;">
+            <p class="hero-tagline">Événementiel & Live</p>
+            <h1>Participations (Cadreur)</h1>
+            <div class="line"></div>
+        </div>
+
+        <div class="year-divider all pro"><span>2025</span></div>
+        <div class="portfolio-grid">
+            <div class="work-sample pro">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/oyZGBu6q700?rel=0" frameborder="0" allowfullscreen></iframe></div>
+                <div class="video-info">
+                    <span class="config-tag" style="background:#ff9f43; color:white;">Cadreur</span>
+                    <h3>Wynton Marsalis Sextet</h3>
+                    <p>Jazz in Marciac 2025 - "No Surrender"</p>
+                </div>
+            </div>
+            <div class="work-sample pro">
+                <div class="video-container"><iframe src="https://youtu.be/cxguCdOOzcw?si=FT-BatfxNeBtDEz7" frameborder="0" allowfullscreen></iframe></div>
+                <div class="video-info">
+                    <span class="config-tag" style="background:#ff9f43; color:white;">Cadreur</span>
+                    <h3>Gregory Porter</h3>
+                    <p>Jazz in Marciac 2025 - "Hey Laura"</p>
+                </div>
+            </div>
+            <div class="work-sample pro">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/xk4rmlFqqQA?rel=0" frameborder="0" allowfullscreen></iframe></div>
+                <div class="video-info">
+                    <span class="config-tag" style="background:#ff9f43; color:white;">Cadreur</span>
+                    <h3>Adi Oasis</h3>
+                    <p>Jazz in Marciac 2025 - "460 (Le Départ)"</p>
+                </div>
+            </div>
+            <div class="work-sample pro">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/YjfB7d9iJdk?rel=0" frameborder="0" allowfullscreen></iframe></div>
+                <div class="video-info">
+                    <span class="config-tag" style="background:#ff9f43; color:white;">Cadreur</span>
+                    <h3>Madeleine Peyroux</h3>
+                    <p>Jazz in Marciac 2025 - "Let's Walk"</p>
+                </div>
+            </div>
+            <div class="work-sample pro">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/ffTIhW_pSds?rel=0" frameborder="0" allowfullscreen></iframe></div>
+                <div class="video-info">
+                    <span class="config-tag" style="background:#ff9f43; color:white;">Cadreur</span>
+                    <h3>Roberto Fonseca</h3>
+                    <p>Jazz in Marciac 2025 - "Triste Alegria"</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="year-divider all pro"><span>2024</span></div>
+        <div class="portfolio-grid">
+            <div class="work-sample pro">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/y3nBykmrg0E?rel=0" frameborder="0" allowfullscreen></iframe></div>
+                <div class="video-info">
+                    <span class="config-tag" style="background:#ff9f43; color:white;">Cadreur</span>
+                    <h3>Shahin Novrasli</h3>
+                    <p>Jazz in Marciac 2024 - "Jungle"</p>
+                </div>
+            </div>
+            <div class="work-sample pro">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/YNiO6t4lbsA?rel=0" frameborder="0" allowfullscreen></iframe></div>
+                <div class="video-info">
+                    <span class="config-tag" style="background:#ff9f43; color:white;">Cadreur</span>
+                    <h3>Delgres</h3>
+                    <p>Jazz in Marciac 2024 - "Mettre Les Voiles"</p>
+                </div>
+            </div>
+            <div class="work-sample pro">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/i_gy5qRwnsI?rel=0" frameborder="0" allowfullscreen></iframe></div>
+                <div class="video-info">
+                    <span class="config-tag" style="background:#ff9f43; color:white;">Cadreur</span>
+                    <h3>Angélique Kidjo</h3>
+                    <p>Jazz in Marciac 2024 - "Crosseyed And Painless"</p>
+                </div>
+            </div>
+            <div class="work-sample pro">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/6FP4ynB4zI8?rel=0" frameborder="0" allowfullscreen></iframe></div>
+                <div class="video-info">
+                    <span class="config-tag" style="background:#ff9f43; color:white;">Cadreur</span>
+                    <h3>El Comité</h3>
+                    <p>Jazz in Marciac 2024 - "Brainstorm Groove"</p>
+                </div>
+            </div>
+
+            <div class="work-sample pro">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/WoUHzzfNQA8?rel=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <span class="config-tag" style="background:#ff9f43; color:white;">Cadreur</span>
+                    <h3>Hiromi's Sonicwonder</h3>
+                    <p>Jazz in Marciac 2024 - "Utopia"</p>
+                </div>
+            </div>
+
+            <div class="work-sample pro">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/d-udIgWleSE?rel=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <span class="config-tag" style="background:#ff9f43; color:white;">Cadreur</span>
+                    <h3>Pink Martini</h3>
+                    <p>Jazz in Marciac 2024 - "Amado Mio"</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="year-divider all pro"><span>2023</span></div>
+        <div class="portfolio-grid">
+            <div class="work-sample pro">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/dSMGy93y4_0?rel=0" frameborder="0" allowfullscreen></iframe></div>
+                <div class="video-info">
+                    <span class="config-tag" style="background:#ff9f43; color:white;">Cadreur</span>
+                    <h3>Snarky Puppy</h3>
+                    <p>Jazz in Marciac 2023 - "Pineapple"</p>
+                </div>
+            </div>
+            <div class="work-sample pro">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/1m6awyOhg84?rel=0" frameborder="0" allowfullscreen></iframe></div>
+                <div class="video-info">
+                    <span class="config-tag" style="background:#ff9f43; color:white;">Cadreur</span>
+                    <h3>Sixun</h3>
+                    <p>Jazz in Marciac 2023 - "The Seven Keys"</p>
+                </div>
+            </div>
+            <div class="work-sample pro">
+                <div class="video-container"><iframe src="https://www.youtube.com/embed/BqXedxTTbWg?rel=0" frameborder="0" allowfullscreen></iframe></div>
+                <div class="video-info">
+                    <span class="config-tag" style="background:#ff9f43; color:white;">Cadreur</span>
+                    <h3>Endea Owens</h3>
+                    <p>Jazz in Marciac 2023 - "Where The Nubians Grow"</p>
+                </div>
+            </div>
+          
+       
+           <div class="work-sample pro">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/4KssQbOus4s?rel=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <span class="config-tag" style="background:#ff9f43; color:white;">Cadreur</span>
+                    <h3>Suzanne Vega</h3>
+                    <p>Jazz in Marciac 2023 - "Tom's Diner"</p>
+                </div>
+            </div>  
+       
+            <div class="work-sample pro">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/xHVLfGl3bOQ?rel=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <span class="config-tag" style="background:#ff9f43; color:white;">Cadreur</span>
+                    <h3>Lizz Wright</h3>
+                    <p>Jazz in Marciac 2023 - "Stop"</p>
+                </div>
+            </div>
+
+           <div class="work-sample pro">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/NaDrIVRPjyY?rel=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <span class="config-tag" style="background:#ff9f43; color:white;">Cadreur</span>
+                    <h3>Gregory Porter</h3>
+                    <p>Jazz in Marciac 2023 - "You Can Join My Band"</p>
+                </div>
+            </div>
+            
+              <div class="work-sample pro">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/QAv5InMJFwQ?rel=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <span class="config-tag" style="background:#ff9f43; color:white;">Cadreur</span>
+                    <h3>Robin McKelle</h3>
+                    <p>Jazz in Marciac 2023 - "How High The Moon"</p>
+                </div>
+            </div>
+
+            <div class="work-sample pro">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/1m6awyOhg84?rel=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <span class="config-tag" style="background:#ff9f43; color:white;">Cadreur</span>
+                    <h3>Sixun</h3>
+                    <p>Jazz in Marciac 2023 - "The Seven Keys"</p>
+                </div>
+            </div>
+
+               <div class="work-sample pro">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/_MbcvkV3OvQ?rel=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <span class="config-tag" style="background:#ff9f43; color:white;">Cadreur</span>
+                    <h3>Florin Niculescu Gipsy All Stars</h3>
+                    <p>Jazz in Marciac 2023 - "Sweet Chorus"</p>
+                </div>
+            </div>
+
+            <div class="work-sample pro">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/EbUcL7EkEug?rel=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-info">
+                    <span class="config-tag" style="background:#ff9f43; color:white;">Cadreur</span>
+                    <h3>Kenny Barron Trio</h3>
+                    <p>Jazz in Marciac 2023 - Live Performance</p>
+                </div>
+            </div>
+
+            <div class="work-sample pro">
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/0I-tcebebAU?rel=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="video-info">
+        <span class="config-tag" style="background:#ff9f43; color:white;">Cadreur</span>
+        <h3>MC Solaar</h3>
+        <p>Jazz in Marciac 2023 - "Bouge De Là"</p>
+    </div>
+</div>
+
+<div class="work-sample pro">
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/3020w_pXURw?rel=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="video-info">
+        <span class="config-tag" style="background:#ff9f43; color:white;">Cadreur</span>
+        <h3>Sofiane Pamart</h3>
+        <p>Jazz In Marciac 2023 - "Public"</p>
+    </div>
+</div>
+
+<div class="work-sample pro">
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/wmXNyuC-wPE?rel=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="video-info">
+        <span class="config-tag" style="background:#ff9f43; color:white;">Cadreur</span>
+        <h3>Cory Wong</h3>
+        <p>Jazz in Marciac 2023 - "Bluebird"</p>
+    </div>
+</div>
+
+<div class="work-sample pro">
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/LNCrlCM_fgY?rel=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="video-info">
+        <span class="config-tag" style="background:#ff9f43; color:white;">Cadreur</span>
+        <h3>Kenny Barron</h3>
+        <p>Jazz in Marciac 2023 - "How Deep Is The Ocean"</p>
+    </div>
+</div>
+
+<div class="work-sample pro">
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/vTH3pjf6YDs?rel=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="video-info">
+        <span class="config-tag" style="background:#ff9f43; color:white;">Cadreur</span>
+        <h3>Samara Joy</h3>
+        <p>Jazz in Marciac 2023 - "Reincarnation Of A Lovebird"</p>
+    </div>
+</div>
+
+
+
+        </div>
+    </section>
+
+    </body>
+</html>
